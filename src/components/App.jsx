@@ -6,13 +6,13 @@ import { ContactList } from './Contacts/ContactList';
 export class App extends Component {
   state = {
     contacts: [],
-    name: '',
   };
 
-  addContact = name => {
+  addContact = ({ name, number }) => {
     const contact = {
       id: nanoid(),
       name,
+      number,
     };
 
     this.setState(prevState => ({

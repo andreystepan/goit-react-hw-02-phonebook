@@ -1,3 +1,7 @@
-export const ContactItem = ({ id, name }) => {
-  return <li>{name}</li>;
+export const ContactItem = ({ id, name, number }) => {
+  return (
+    <li>
+      {name} : {number}
+    </li>
+  );
 };
